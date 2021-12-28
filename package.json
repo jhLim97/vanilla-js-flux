@@ -26,6 +26,7 @@
     "babel-loader": "^8.2.3",
     "core-js": "^3.20.1",
     "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
     "sass": "^1.45.1",
     "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",

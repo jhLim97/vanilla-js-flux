@@ -13,3 +13,6 @@ npm install style-loader sass-loader sass css-loader -D
 // 리소스 관련 설정
 이전에는 file-loader를 사용했지만, webpack 5부터는 asset/resource로 대체가능
 별도의 설치과정 없이, type: 'asset/resource'과 같이 설정가능
+
+// 웹팩 HtmlWebpackPlugin 설정(웹팩으로 빌드한 결과물로 Html 파일생성)
+npm install html-webpack-plugin -D
