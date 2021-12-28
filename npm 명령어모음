@@ -19,3 +19,6 @@ npm install html-webpack-plugin -D
 
 // 웹팩 Dev Server 설정(proxy 및 코드 수정 시 추가적인 빌드없이 바로 확인가능)
 npm install webpack-dev-server -D
+
+// esLint, Prettier 설정추가
+npm install eslint eslint-config-prettier eslint-plugin-prettier prettier -D
