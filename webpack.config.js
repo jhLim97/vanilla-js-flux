@@ -23,6 +23,10 @@ module.exports = {
                     "sass-loader",
                 ],
             },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/,
+                type: 'asset/resource',
+            },
         ]
     }, 
 }
