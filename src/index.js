@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import "./common.scss";
 import { sum } from './math';
 
 function component() {

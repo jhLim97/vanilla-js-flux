@@ -6,3 +6,6 @@ npm i lodash
 // 바벨설정
 npm install babel-loader @babel/core @babel/preset-env @babel/cli @babel/plugin-proposal-class-properties -D
 npm install core-js@3 -D
+
+// 스타일관련 loader 설정
+npm install style-loader sass-loader sass css-loader -D
