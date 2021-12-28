@@ -29,10 +29,14 @@ module.exports = {
                 type: 'asset/resource',
             },
         ]
-    }, 
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'
         }),
-    ]
+    ],
+    devServer: {
+        port: 9000,
+        historyApiFallback: true,
+    },
 }

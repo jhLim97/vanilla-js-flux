@@ -16,3 +16,6 @@ npm install style-loader sass-loader sass css-loader -D
 
 // 웹팩 HtmlWebpackPlugin 설정(웹팩으로 빌드한 결과물로 Html 파일생성)
 npm install html-webpack-plugin -D
+
+// 웹팩 Dev Server 설정(proxy 및 코드 수정 시 추가적인 빌드없이 바로 확인가능)
+npm install webpack-dev-server -D
