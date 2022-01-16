@@ -1,6 +1,7 @@
 import Component from '../../core/Component';
 import TopBar from '../../components/top-bar';
 import TodoList from '../../components/todo-list';
+import TodoCreator from '../../components/todo-creator';
 
 export default class Home extends Component {
     template() {
@@ -16,8 +17,10 @@ export default class Home extends Component {
     didMount() {
         const targetHeader = this.target.querySelector('.home-header');
         const targetMain = this.target.querySelector('.home-main');
+        const targetFooter = this.target.querySelector('.home-footer');
 
         new TopBar(targetHeader);
         new TodoList(targetMain);
+        new TodoCreator(targetFooter);
     }
 }
