@@ -1,4 +1,5 @@
 import Component from '../../core/Component';
+import TopBar from '../../components/top-bar';
 
 export default class Home extends Component {
     template() {
@@ -12,6 +13,7 @@ export default class Home extends Component {
     }
 
     didMount() {
-        console.log('헤더, 메인, 푸터 컴포넌트 생성 및 프롭스 주입');
+        const targetHeader = this.target.querySelector('.home-header');
+        new TopBar(targetHeader);
     }
 }
