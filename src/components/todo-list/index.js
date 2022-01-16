@@ -1,5 +1,5 @@
 import Component from '../../core/Component';
-import todoStore from '../../stores/todoList';
+import { todoStore } from '../../stores/todoList';
 
 export default class TodoList extends Component {
     template() {

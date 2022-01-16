@@ -12,6 +12,5 @@ const todoReducer = (state = {}, action) => {
 };
 
 const initState = { todos: ['백준 1문제 풀기', '‘그해 우리는’ 시청', '밥 맛있게 먹기'] };
-const todoStore = CreateStore(initState, todoReducer);
-
-export default todoStore;
+export const todoStore = CreateStore(initState, todoReducer);
+export const ADD_ACTION = (todo) => ({ type: 'ADD', todo });

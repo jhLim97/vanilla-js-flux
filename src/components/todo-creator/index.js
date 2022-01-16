@@ -1,5 +1,5 @@
 import Component from '../../core/Component';
-import todoStore from '../../stores/todoList';
+import { todoStore, ADD_ACTION } from '../../stores/todoList';
 
 export default class TodoCreator extends Component {
     template() {
@@ -20,12 +20,7 @@ export default class TodoCreator extends Component {
 
             const todo = createInput.value;
 
-            // action도 분리하기
-            const action = {
-                type: 'ADD',
-                todo,
-            };
-            todoStore.dispatch(action);
+            todoStore.dispatch(ADD_ACTION(todo));
             createInput.value = null;
         };
 
