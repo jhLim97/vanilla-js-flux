@@ -1,3 +1,3 @@
-# webpack-bolierplate
+# vanilla-js-flux
 
-처음부터 하나씩 구축해나가는 webpack boilerplate 저장소
+바닐라 자바스크립트로 flux 패턴의 중앙저장소를 구현해보는 저장소
