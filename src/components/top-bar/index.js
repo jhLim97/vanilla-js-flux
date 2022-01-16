@@ -12,6 +12,6 @@ export default class TopBar extends Component {
     }
 
     didMount() {
-        todoStore.subscribe(this.render);
+        todoStore.subscribe(this.render.bind(this));
     }
 }
