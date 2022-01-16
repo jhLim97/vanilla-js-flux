@@ -10,7 +10,6 @@ export default class Component {
 
     initState(state) {
         this.state = state;
-        console.log('테스트용 => defineProperty테스트');
     }
 
     template() {
