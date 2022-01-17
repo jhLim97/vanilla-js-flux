@@ -29,11 +29,9 @@ export default class Component {
     }
 
     setState(newState) {
-        const isStateChange = () => {
-            return JSON.stringify(this.state) !== JSON.stringify(newState);
-        };
+        const isStateChange = JSON.stringify(this.state) !== JSON.stringify(newState);
+        if (!isStateChange) return;
 
-        if (!isStateChange()) return;
         this.state = { ...this.state, ...newState };
         this.didUpdate();
     }
