@@ -15,8 +15,7 @@ const CreateStore = (initState, reducer) => {
 
     const setState = (newState) => {
         const isStateChange = () => {
-            if (JSON.stringify(state) === JSON.stringify(newState)) return false;
-            return true;
+            return JSON.stringify(state) !== JSON.stringify(newState);
         };
 
         if (!isStateChange()) return;
